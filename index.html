@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <!-- HEAD -->
+    <head>
+        <title>Password Generator</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!-- CSS links -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <!-- BODY -->
+    <body>
+        <!-- container -->
+        <div class="container">
+            <div class="row" >
+                <div class="col-lg-6 offset-lg-3 col-md-9 offset-md-1 col-sm-12 col-xs-12 py-4 px-3" id="box">
+                    <!-- Text -->
+                    <h1 class="text-center py-2 mb-4 fw-bold">PASSWORD GENERATOR</h1>
+                    <!-- Result Container -->
+                    <div class="result-box">
+                        <textarea id="PasswordResult" class="form-control" placeholder="Your Generated Password will be displayed here..."></textarea>
+                    </div>
+                    <!-- Settings -->
+                    <!-- Password Length -->
+                    <div class="row mt-5 ">
+                        <div class="col-lg-12">
+                            <label for="PasswordLength">Password Length</label>
+                            <input type="number" oninput="checkLen()" id="PasswordLength" min="4" max="20" value="8" aria-describedby="numberHelp" />
+                            
+                        </div>
+                    </div>
+                    <small id="numberHelp" class="mt-1" style="color:red"></small>
+                    <!-- Include Uppercase Letters -->
+                    <div class="row mt-4">
+                        <div class="col-lg-12">
+                            <label for="UpperCase">Include Uppercase Letters</label>
+                            <input type="checkbox" id="UpperCase" checked/>
+                        </div>
+                    </div>
+                    <!-- Include lowercase letters -->
+                    <div class="row mt-4">
+                        <div class="col-lg-12">
+                            <label for="LowerCase">Include Lowercase Letters</label>
+                            <input type="checkbox" id="LowerCase" checked/>
+                        </div>
+                    </div>
+                    <!-- Include Numbers -->
+                    <div class="row mt-4">
+                        <div class="col-lg-12">
+                            <label for="numbers">Include Numbers</label>
+                            <input type="checkbox" id="numbers" checked/>
+                        </div>
+                    </div>
+                    <!-- Include Symbols -->
+                    <div class="row mt-4">
+                        <div class="col-lg-12 ">
+                            <label for="symbols">Include Symbols</label>
+                            <input type="checkbox" id="symbols" checked/>
+                        </div>
+                    </div>
+                    <div class="row my-5">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <button class="btn btn-lg btn-primary px-4 py-3" id="generateBtn">
+                                <i class="fas fa-key"></i> Generate
+                            </button>
+                            <button class="btn btn-lg btn-outline-success px-4 py-3 mx-lg-5 mx-1" id="clipboardBtn">
+                                <i class="far fa-clipboard"></i> Copy
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/passgen.js"></script>
+    </body>
+</html>

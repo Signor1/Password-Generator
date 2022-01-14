@@ -1,0 +1,59 @@
+$bg-color: #dde1e7;
+$header-shadow: 5px 5px 7px #babecc, -10px -10px 15px #ffffff73;
+$label-shadow: 2px 2px 5px #babecc, -5px -5px 10px #ffffff73;
+$box-shadow:  2px 2px 5px #babecc, -5px -5px 10px #ffffff73 !important;
+
+html{
+    height: 100vh;
+}
+
+body{
+    background-color: grey;
+    #box{
+        background-color: $bg-color;
+        box-sizing: border-box;
+        border: 2px solid rgba(0,0,0,0.06);
+        h1{
+            color: rgba(0,0,0,0.5);
+            text-shadow: $header-shadow;
+        }
+        .result-box{
+            height: 60px;
+            textarea{
+                outline: none !important;
+                background-color: #dde1e7 !important;
+                color: #595959 !important;
+                box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff73 !important;
+                resize: none;       
+            }
+        }
+        label{
+            color: rgba(0,0,0,1);
+            text-shadow: $label-shadow;
+            font-size: 18px;
+        }
+        input{
+            float: right;
+        }
+        input[type=number]{
+            outline: none !important;
+            background-color: #dde1e7 !important;
+            color: #595959 !important;
+            box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff73 !important;
+            width: 100px;
+            height: 30px;
+            &:out-of-range{
+                border: 2px solid red;
+            }
+            &:in-range{
+                border: 2px solid green;
+            }
+        }
+        input[type=checkbox]{
+            box-shadow: $box-shadow;
+        }
+        button{
+            box-shadow: $box-shadow;
+        }
+    }
+}

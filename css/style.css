@@ -1,0 +1,59 @@
+html {
+  height: 100vh;
+}
+
+body {
+  background-color: grey;
+}
+body #box {
+  background-color: #dde1e7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.06);
+}
+body #box h1 {
+  color: rgba(0, 0, 0, 0.5);
+  text-shadow: 5px 5px 7px #babecc, -10px -10px 15px #ffffff73;
+}
+body #box .result-box {
+  height: 60px;
+}
+body #box .result-box textarea {
+  outline: none !important;
+  background-color: #dde1e7 !important;
+  color: #595959 !important;
+  -webkit-box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff73 !important;
+          box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff73 !important;
+  resize: none;
+}
+body #box label {
+  color: black;
+  text-shadow: 2px 2px 5px #babecc, -5px -5px 10px #ffffff73;
+  font-size: 18px;
+}
+body #box input {
+  float: right;
+}
+body #box input[type=number] {
+  outline: none !important;
+  background-color: #dde1e7 !important;
+  color: #595959 !important;
+  -webkit-box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff73 !important;
+          box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff73 !important;
+  width: 100px;
+  height: 30px;
+}
+body #box input[type=number]:out-of-range {
+  border: 2px solid red;
+}
+body #box input[type=number]:in-range {
+  border: 2px solid green;
+}
+body #box input[type=checkbox] {
+  -webkit-box-shadow: 2px 2px 5px #babecc, -5px -5px 10px #ffffff73 !important;
+          box-shadow: 2px 2px 5px #babecc, -5px -5px 10px #ffffff73 !important;
+}
+body #box button {
+  -webkit-box-shadow: 2px 2px 5px #babecc, -5px -5px 10px #ffffff73 !important;
+          box-shadow: 2px 2px 5px #babecc, -5px -5px 10px #ffffff73 !important;
+}
