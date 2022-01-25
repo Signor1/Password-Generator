@@ -11,6 +11,7 @@ body{
     background-color: grey;
     #box{
         background-color: $bg-color;
+        margin-top: 5px;
         box-sizing: border-box;
         border: 2px solid rgba(0,0,0,0.06);
         h1{
