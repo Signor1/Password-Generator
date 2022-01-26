@@ -3,12 +3,15 @@ html {
 }
 
 body {
-  background-color: grey;
+  background-color: #dde1e7;
 }
 body #box {
   background-color: #dde1e7;
+  margin-top: 5px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-box-shadow: 2px 2px 5px #babecc, -5px -5px 10px #ffffff73 !important;
+          box-shadow: 2px 2px 5px #babecc, -5px -5px 10px #ffffff73 !important;
   border: 2px solid rgba(0, 0, 0, 0.06);
 }
 body #box h1 {

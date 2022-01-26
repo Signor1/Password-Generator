@@ -8,11 +8,12 @@ html{
 }
 
 body{
-    background-color: grey;
+    background-color: $bg-color;
     #box{
         background-color: $bg-color;
         margin-top: 5px;
         box-sizing: border-box;
+        box-shadow: $box-shadow;
         border: 2px solid rgba(0,0,0,0.06);
         h1{
             color: rgba(0,0,0,0.5);
